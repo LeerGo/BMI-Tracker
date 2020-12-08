@@ -1,0 +1,7 @@
+<resources>
+    <!--    <string name="app_name">BMI 体重日记</string>-->
+    <string name="app_name">演示</string>
+    <string name="menu_target">目标</string>
+    <string name="menu_mine">我的</string>
+    <string name="home_title">体重日记</string>
+</resources>

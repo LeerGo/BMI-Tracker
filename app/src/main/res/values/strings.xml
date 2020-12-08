@@ -1,0 +1,7 @@
+<resources>
+    <!--    <string name="app_name">BMI Weight Tracker</string>-->
+    <string name="app_name">DEMO</string>
+    <string name="menu_target">Targets</string>
+    <string name="menu_mine">My Weight</string>
+    <string name="home_title">My Weight</string>
+</resources>
