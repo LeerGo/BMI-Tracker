@@ -3,5 +3,8 @@
     <string name="app_name">演示</string>
     <string name="menu_target">目标</string>
     <string name="menu_mine">我的</string>
-    <string name="home_title">体重日记</string>
+<!--    <string name="home_title">体重日记</string>-->
+    <string name="home_title">这是标题</string>
+<!--    <string name="current_weight">当前体重</string>-->
+    <string name="current_weight">当前数值</string>
 </resources>

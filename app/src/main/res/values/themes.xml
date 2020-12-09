@@ -1,19 +1,18 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">@color/color_5b56bc</color>
+    <color name="colorPrimaryDark">@color/white</color>
+
     <!-- Base application theme. -->
-    <style name="Theme.BMI"
-           parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.BMI" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/white</item>
-        <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_700</item>
-        <item name="colorOnSecondary">@color/black</item>
-        <!-- Status bar color. -->
-        <item name="android:statusBarColor"
-              tools:targetApi="l">?attr/colorPrimaryVariant
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <!-- Status bar color. x-->
+        <item name="android:statusBarColor" tools:targetApi="l">
+            ?attr/colorPrimaryVariant
         </item>
+        <!--TODO: 刘海屏、低版本适配 @lyf 2020-12-09 03:14:33 -->
+        <item name="android:windowLightStatusBar">true</item>
         <!-- Customize your theme here. -->
     </style>
 </resources>
