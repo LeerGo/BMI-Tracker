@@ -58,7 +58,7 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.4.21"
     implementation 'androidx.core:core-ktx:1.3.2'
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.2.1'
@@ -71,4 +71,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-bom:26.1.1'
     implementation 'com.google.firebase:firebase-analytics-ktx:18.0.0'
     implementation 'com.google.firebase:firebase-crashlytics-ktx:17.3.0'
+
+    // UI - chart
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
 }
