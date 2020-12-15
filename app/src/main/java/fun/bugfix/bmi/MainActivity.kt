@@ -4,6 +4,7 @@ import `fun`.bugfix.bmi.widget.BmiProgress
 import android.graphics.Color
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
 import com.github.mikephil.charting.components.LimitLine
 import com.github.mikephil.charting.components.XAxis
 import com.github.mikephil.charting.components.YAxis
@@ -22,6 +23,7 @@ import fnu.bugfix.chart.BarChartRound
 class MainActivity : AppCompatActivity() {
     private lateinit var chart: BarChartRound
     private lateinit var cvBmi: BmiProgress
+    private lateinit var pbTarget: RoundCornerProgressBar
 
     protected var suppliers = arrayOf("周一", "周二", "周三", "周四", "周五", "周六", "周天")
 
@@ -36,7 +38,9 @@ class MainActivity : AppCompatActivity() {
     private fun initViews() {
         chart = findViewById(R.id.chart)
         cvBmi = findViewById(R.id.cvBmi)
+        pbTarget = findViewById(R.id.pbTarget)
         cvBmi.setFlag(23)
+        pbTarget.progress = 80f
     }
 
     private fun initChart() {

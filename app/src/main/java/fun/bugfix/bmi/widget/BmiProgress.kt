@@ -78,7 +78,7 @@ class BmiProgress @JvmOverloads constructor(context: Context, attrs: AttributeSe
         if (count < flag) {
             drawProgress(canvas, count)
             count += 1
-            postInvalidateDelayed(80)
+            postInvalidateDelayed(40)
         } else {
             drawProgress(canvas, flag)
         }

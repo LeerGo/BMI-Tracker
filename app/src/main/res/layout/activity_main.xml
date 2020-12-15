@@ -279,7 +279,7 @@
                     app:rcAnimationSpeedScale="3"
                     app:rcBackgroundColor="#D9E8FD"
                     app:rcMax="100"
-                    app:rcProgress="80"
+                    app:rcAnimationEnable="true"
                     app:rcProgressColors="@array/progress_gradient" />
             </RelativeLayout>
         </LinearLayout>
