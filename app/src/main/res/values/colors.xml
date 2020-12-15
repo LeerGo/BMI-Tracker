@@ -10,4 +10,9 @@
     
     <color name="color_5b56bc">#FF5B56BC</color>
     <color name="color_333333">#FF333333</color>
+
+    <array name="progress_gradient">
+        <item>#498BF7</item>
+        <item>#9CC5FA</item>
+    </array>
 </resources>

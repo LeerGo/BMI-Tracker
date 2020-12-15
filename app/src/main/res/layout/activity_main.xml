@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.appcompat.widget.LinearLayoutCompat
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -268,6 +269,18 @@
                     android:textColor="@color/color_333333"
                     android:textSize="20dp"
                     android:textStyle="bold" />
+
+                <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                    android:id="@+id/pbTarget"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_below="@+id/tvCurrentValue"
+                    android:layout_marginTop="8dp"
+                    app:rcAnimationSpeedScale="3"
+                    app:rcBackgroundColor="#D9E8FD"
+                    app:rcMax="100"
+                    app:rcProgress="80"
+                    app:rcProgressColors="@array/progress_gradient" />
             </RelativeLayout>
         </LinearLayout>
     </ScrollView>

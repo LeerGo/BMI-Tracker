@@ -82,7 +82,6 @@ class MainActivity : AppCompatActivity() {
         val axisLeft: YAxis = chart.getAxisLeft() // 获取左边Y轴操作类
         axisLeft.axisMinimum = 0f // 设置最小值
         axisLeft.granularity = 0f // 设置Label间隔
-//        axisLeft.labelCount = 10 // 设置标签数量
         axisLeft.setValueFormatter(object : ValueFormatter() {
             override fun getFormattedValue(value: Float): String = "${value.toInt()} KG"
         })
