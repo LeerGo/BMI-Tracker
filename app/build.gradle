@@ -72,6 +72,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-analytics-ktx:18.0.0'
     implementation 'com.google.firebase:firebase-crashlytics-ktx:17.3.0'
 
-    // UI - chart
+    // UI
     implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    implementation 'com.akexorcist:round-corner-progress-bar:2.1.1'
 }

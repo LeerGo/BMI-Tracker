@@ -1,5 +1,6 @@
 package `fun`.bugfix.bmi
 
+import `fun`.bugfix.bmi.widget.BmiProgress
 import android.graphics.Color
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -20,6 +21,8 @@ import fnu.bugfix.chart.BarChartRound
  */
 class MainActivity : AppCompatActivity() {
     private lateinit var chart: BarChartRound
+    private lateinit var cvBmi: BmiProgress
+
     protected var suppliers = arrayOf("周一", "周二", "周三", "周四", "周五", "周六", "周天")
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,6 +35,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun initViews() {
         chart = findViewById(R.id.chart)
+        cvBmi = findViewById(R.id.cvBmi)
+        cvBmi.setFlag(23)
     }
 
     private fun initChart() {

@@ -46,7 +46,7 @@
                 android:layout_marginTop="12dp">
 
                 <TextView
-                    android:id="@+id/tvCurrent"
+                    android:id="@+id/tvCurrentWeight"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/current_weight"
@@ -57,7 +57,7 @@
                     android:id="@+id/tvWeight"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/tvCurrent"
+                    android:layout_below="@+id/tvCurrentWeight"
                     android:text="65 KG"
                     android:textColor="@color/color_333333"
                     android:textSize="28dp" />
@@ -86,18 +86,188 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:background="@drawable/back_home_bmi">
+                android:background="@drawable/back_home_bmi"
+                android:padding="16dp">
 
+                <TextView
+                    android:id="@+id/tvBmi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="YOUR BMI"
+                    android:textColor="@color/color_333333"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvBmiValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvBmi"
+                    android:layout_marginTop="4dp"
+                    android:text="23.0"
+                    android:textColor="@color/color_333333"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvBmiState"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvBmi"
+                    android:layout_alignBaseline="@id/tvBmiValue"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/tvBmiValue"
+                    android:text="Normal"
+                    android:textColor="#858B83"
+                    android:textSize="13dp" />
+
+                <fun.bugfix.bmi.widget.BmiProgress
+                    android:id="@+id/cvBmi"
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"
+                    android:layout_below="@id/tvBmiValue"
+                    android:layout_marginTop="6dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cvBmi"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/color_333333"
+                        android:textSize="10dp" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="40" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="18"
+                        android:textColor="@color/color_333333"
+                        android:textSize="10dp" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="12" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="24"
+                        android:textColor="@color/color_333333"
+                        android:textSize="10dp" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="7" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="28"
+                        android:textColor="@color/color_333333"
+                        android:textSize="10dp" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="50" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="48"
+                        android:textColor="@color/color_333333"
+                        android:textSize="10dp" />
+                </LinearLayout>
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:background="@drawable/back_home_progress">
+                android:background="@drawable/back_home_progress"
+                android:padding="16dp">
 
+                <TextView
+                    android:id="@+id/tvProgress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="YOUR PROGRESS"
+                    android:textColor="@color/color_333333"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvCurrent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvProgress"
+                    android:layout_marginTop="4dp"
+                    android:text="Current"
+                    android:textColor="#858B83"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/tvLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/tvCurrent"
+                    android:layout_centerHorizontal="true"
+                    android:text="Left"
+                    android:textColor="#858B83"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/tvTarget"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/tvLeft"
+                    android:layout_alignParentEnd="true"
+                    android:text="Target"
+                    android:textColor="#858B83"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/tvCurrentValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvCurrent"
+                    android:text="64 kg"
+                    android:textColor="@color/color_333333"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvLeftValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/tvCurrentValue"
+                    android:layout_centerHorizontal="true"
+                    android:text="16 kg"
+                    android:textColor="@color/color_333333"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvTargetValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/tvCurrentValue"
+                    android:layout_alignParentEnd="true"
+                    android:text="50 kg"
+                    android:textColor="@color/color_333333"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
             </RelativeLayout>
         </LinearLayout>
     </ScrollView>
