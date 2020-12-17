@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6864D8"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Cancel"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:src="@drawable/ic_star_ring" />
+
+    <TextView
+        android:id="@+id/tvLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="148dp"
+        android:text="Enter Weight"
+        android:textColor="@color/white"
+        android:textSize="36dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:background="@null"
+        android:digits="0123456789."
+        android:gravity="center"
+        android:hint="0.00"
+        android:inputType="number"
+        android:maxLength="6"
+        android:maxLines="1"
+        android:minWidth="100dp"
+        android:textColor="@color/white"
+        android:textColorHint="#7D7ADA"
+        android:textSize="40dp" />
+
+    <View
+        android:id="@+id/vLine"
+        android:layout_width="120dp"
+        android:layout_height="2dp"
+        android:layout_below="@id/etWeight"
+        android:layout_centerHorizontal="true"
+        android:background="#7D7ADA" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vLine"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvKG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_back_text_2"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="2dp"
+            android:text="KG"
+            android:textColor="@color/selector_color_text_2" />
+
+        <TextView
+            android:id="@+id/tvLB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/selector_back_text_2"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="2dp"
+            android:text="LB"
+            android:textColor="@color/selector_color_text_2" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/back_stadium_white"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Done"
+        android:textColor="@color/color_333333"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+</RelativeLayout>

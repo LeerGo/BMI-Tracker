@@ -79,7 +79,7 @@
                     android:textSize="12dp" />
             </RelativeLayout>
 
-            <fnu.bugfix.chart.BarChartRound
+            <fun.bugfix.chart.BarChartRound
                 android:id="@+id/chart"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
@@ -276,10 +276,10 @@
                     android:layout_height="10dp"
                     android:layout_below="@+id/tvCurrentValue"
                     android:layout_marginTop="8dp"
+                    app:rcAnimationEnable="true"
                     app:rcAnimationSpeedScale="3"
                     app:rcBackgroundColor="#D9E8FD"
                     app:rcMax="100"
-                    app:rcAnimationEnable="true"
                     app:rcProgressColors="@array/progress_gradient" />
             </RelativeLayout>
         </LinearLayout>
@@ -301,14 +301,14 @@
                 android:layout_width="28dp"
                 android:layout_height="28dp"
                 android:duplicateParentState="true"
-                android:src="@drawable/ic_target_selector" />
+                android:src="@drawable/selector_ic_target" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:duplicateParentState="true"
                 android:text="@string/menu_target"
-                android:textColor="@color/color_text_selector" />
+                android:textColor="@color/selector_color_text_1" />
         </LinearLayout>
 
         <ImageView
@@ -336,7 +336,7 @@
                 android:layout_height="wrap_content"
                 android:duplicateParentState="true"
                 android:text="@string/menu_mine"
-                android:textColor="@color/color_text_selector" />
+                android:textColor="@color/selector_color_text_1" />
         </LinearLayout>
     </androidx.appcompat.widget.LinearLayoutCompat>
 </androidx.appcompat.widget.LinearLayoutCompat>

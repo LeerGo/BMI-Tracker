@@ -1,8 +1,11 @@
 package `fun`.bugfix.bmi
 
 import `fun`.bugfix.bmi.widget.BmiProgress
+import `fun`.bugfix.chart.BarChartRound
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
+import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
 import com.github.mikephil.charting.components.LimitLine
@@ -12,7 +15,6 @@ import com.github.mikephil.charting.data.BarData
 import com.github.mikephil.charting.data.BarDataSet
 import com.github.mikephil.charting.data.BarEntry
 import com.github.mikephil.charting.formatter.ValueFormatter
-import fnu.bugfix.chart.BarChartRound
 
 /**
  * 1. 建立个人档案 年龄、性别、身高、体重
@@ -21,8 +23,9 @@ import fnu.bugfix.chart.BarChartRound
  * 5. 设置功能 - 语言、提醒、数据备份（先不做）
  */
 class MainActivity : AppCompatActivity() {
-    private lateinit var chart: BarChartRound
+    private lateinit var ivAdd: ImageView
     private lateinit var cvBmi: BmiProgress
+    private lateinit var chart: BarChartRound
     private lateinit var pbTarget: RoundCornerProgressBar
 
     protected var suppliers = arrayOf("周一", "周二", "周三", "周四", "周五", "周六", "周天")
@@ -32,6 +35,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         initViews()
+        setViews()
         initChart()
     }
 
@@ -39,8 +43,16 @@ class MainActivity : AppCompatActivity() {
         chart = findViewById(R.id.chart)
         cvBmi = findViewById(R.id.cvBmi)
         pbTarget = findViewById(R.id.pbTarget)
+        ivAdd = findViewById(R.id.ivAdd)
+    }
+
+    private fun setViews() {
         cvBmi.setFlag(23)
         pbTarget.progress = 80f
+
+        ivAdd.setOnClickListener {
+            startActivity(Intent(this, RecordAddActivity::class.java))
+        }
     }
 
     private fun initChart() {

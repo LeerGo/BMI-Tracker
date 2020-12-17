@@ -1,4 +1,4 @@
-package fnu.bugfix.chart
+package `fun`.bugfix.chart
 
 import android.graphics.Canvas
 import android.graphics.LinearGradient
